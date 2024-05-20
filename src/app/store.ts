@@ -20,6 +20,5 @@ export type AppActionsType = getDecksACType
 //Типизация Thunk
 export type AppThunkType<ReturnType = void> = ThunkAction<ReturnType, AppRootState, unknown, AppActionsType>
 
-
 export const useAppDispatch = () => useDispatch<AppDispatch>()
 export const useAppSelector: TypedUseSelectorHook<AppRootState> = useSelector
